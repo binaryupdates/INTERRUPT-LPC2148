@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\main.o"
+--strict --scatter ".\INTERRUPTLPC2148.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\INTERRUPTLPC2148.map" -o .\INTERRUPTLPC2148.axf
